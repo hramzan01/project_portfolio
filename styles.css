@@ -1,0 +1,278 @@
+/* Home section content */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  align-items: center;
+  color: white;
+  padding-bottom: 100px; /* Add some padding to push content up */
+}
+
+#home .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(64, 64, 64);
+  z-index: 1; /* Ensure the content is above the SVG */
+}
+
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(97, 97, 97);
+}
+
+#about {
+  padding: 15% 0; /* Increase padding to increase height */
+  background-color: #f4f4f4; /* Background color for the section */
+}
+
+#about .content {
+  text-align: center;
+  color: #333; /* Text color for the section */
+}
+
+
+/* Projects section */
+#projects {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  grid-gap: 50px;
+  padding: 100px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.project {
+  position: relative;
+  width: 100%; /* Ensures each project takes full width */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.453);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h2,
+.overlay p {
+  color: white;
+}
+
+/* Contact section */
+#contact {
+  background-color: #f4f4f4;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.links a {
+  color: #686868;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  color: #000;
+}
+
+/* SVG animation */
+#animated-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure the SVG is behind the content */
+}
+
+.icon {
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+body {
+  font-family: "M PLUS Code Latin", monospace;
+  /* Other styles */
+}
+
+/* Additional styles for specific elements if needed */
+h1, h2, h3, h4, h5, p {
+  font-family: "M PLUS Code Latin", monospace;
+}
+
+.scroll-indicator {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url('caret-down.svg'); /* Replace 'caret-down.png' with the path to your caret image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation: bounce 0.5s infinite alternate; /* Bounce animation */
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255); /* Transparent background color */
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  font-family: "M PLUS Code Latin", monospace;
+}
+
+.navbar a {
+  color: #797979; /* Dark grey text color */
+  text-decoration: none;
+  margin: 10px 20px;
+  position: relative; /* Position relative for the line effect */
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust the distance from the text */
+  left: 0;
+  width: 100%;
+  height: 1px; /* Thickness of the line */
+  background-color: #333; /* Color of the line */
+  transform: scaleX(0); /* Initially hide the line */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1); /* Show the line on hover */
+}
+
+.icons {
+  display: inline-block;
+  margin-left: auto; /* Align icons to the right */
+}
+
+.icons a {
+  color: #686868;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.icons a:hover {
+  color: #000;
+}
+
+#timeline {
+  margin-top: 50px; /* Adjust the margin as needed */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#timeline-svg {
+  width: 100%;
+  max-width: 1000px; /* Limit the maximum width of the SVG */
+}
+
+#timeline-svg line {
+  stroke-dasharray: 5; /* Add dashes to the line */
+}
+
+#timeline-svg circle {
+  transition: fill 0.3s; /* Add smooth transition effect to circle fill */
+}
+
+#timeline-svg text {
+  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
+  font-size: 14px; /* Adjust font size as needed */
+  text-anchor: middle; /* Center-align text horizontally */
+}
+
+#timeline-svg circle:hover {
+  fill: #00a91f; /* Change circle color on hover */
+}
+
+.publication-link {
+  color: steelblue; /* Color of the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold font */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.publication-link:hover {
+  color: navy; /* Change color on hover */
+}
+
+.centered-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tech-stack {
+  position: absolute;
+  bottom: 50px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  overflow: hidden;
+  border-radius: 50%; /* Makes the image round */
+}
+
+.profile-picture img {
+  width: 100%; /* Ensure the image fills its container */
+  height: 100%; /* Ensure the image fills its container */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000; /* Ensure the content is above the SVG */
+
+
+}
