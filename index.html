@@ -26,101 +26,110 @@
         </div>
       </div>
     </div>
-
-  <section id="home">
-    <div class="background"></div>
-    <div class="content">
-      <h1 class="title">HAARIS RAMZAN | DATA ENGINEER</h1>
-    </div>
-    <svg id="animated-svg"></svg>
-  </section>
-
-  <section id="about">
-    <div class="background"></div>
-    <div class="content">
-      <h2>About Me</h2>
-      <p>
-        Architect and data specialist leveraging project data to deliver high quality, cost effective and sustainable design.<br>
-        From the decarbonisation of modern housing to monitoring the big data requirements of future cities across the world.
-      </p>
-    </div>
-  </section>
-
-  <section id="timeline">
-    <svg id="timeline-svg" width="100%" height="200">
-      <line x1="50" y1="100" x2="950" y2="100" stroke="#ccc" stroke-width="2" />
-
-      <circle cx="50" cy="100" r="5" fill="#ccc" />
-      <circle cx="950" cy="100" r="5" fill="#ccc" />
-      <circle cx="200" cy="100" r="10" fill="steelblue" />
-      <circle cx="500" cy="100" r="10" fill="steelblue" />
-      <circle cx="800" cy="100" r="10" fill="steelblue" />
-      <text x="200" y="130" fill="black">2016 - Architect</text>
-      <text x="500" y="130" fill="black">2018 - Computational Designer</text>
-      <text x="800" y="130" fill="black">2022 - Data Engineer</text>
-    </svg>
-  </section>
-
-  <section id="projects">
-    <a href="project1.html" class="project" id="project1">
-      <img src="project1.gif" alt="Project 1">
-      <div class="overlay">
-        <div class="overlay-content">
-          <div class="centered-content">
-            <h2>project_01</h2>
-            <p>Data Powered Cities of the Future</p>
-          </div>
-          <div class="tech-stack">
-            <p>['python','pandas','sqlite','sklearn', airflow']</p>
+    
+    <section id="home">
+      <div class="background"></div>
+      <div class="content">
+        <h1 class="title">HAARIS RAMZAN | DATA ENGINEER</h1>
+      </div>
+      <svg id="animated-svg"></svg>
+    </section>
+    
+    <section id="about">
+      <div class="background"></div>
+      <div class="content">
+        <h2>About Me</h2>
+        <p>
+          Architect and data specialist leveraging project data to deliver high quality, cost effective and sustainable design.<br>
+          From the decarbonisation of modern housing to monitoring the big data requirements of future cities across the world.
+        </p>
+      </div>
+    </section>
+    
+    <section id="timeline">
+      <svg id="timeline-svg" width="100%" height="200">
+        <line x1="50" y1="100" x2="950" y2="100" stroke="#ccc" stroke-width="2" />
+        
+        <circle cx="50" cy="100" r="5" fill="#ccc" />
+        <circle cx="950" cy="100" r="5" fill="#ccc" />
+        <circle cx="200" cy="100" r="10" fill="steelblue" />
+        <circle cx="500" cy="100" r="10" fill="steelblue" />
+        <circle cx="800" cy="100" r="10" fill="steelblue" />
+        <text x="200" y="130" fill="black">2016 - Architect</text>
+        <text x="500" y="130" fill="black">2018 - Computational Designer</text>
+        <text x="800" y="130" fill="black">2022 - Data Engineer</text>
+      </svg>
+    </section>
+    
+    <section id="projects">
+      <a href="project1.html" class="project" id="project1">
+        <img src="project1.gif" alt="Project 1">
+        <div class="overlay">
+          <div class="overlay-content">
+            <div class="centered-content">
+              <h2>project_01</h2>
+              <p>Data Powered Cities of the Future</p>
+            </div>
+            <div class="tech-stack">
+              <p>['python','pandas','sqlite','sklearn', airflow']</p>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-    <a href="project2.html" class="project" id="project2">
-      <img src="project2.gif" alt="Project 2">
-      <div class="overlay">
-        <div class="overlay-content">
-          <div class="centered-content">
-            <h2>project_02</h2>
-            <p>MARKET: Social Social Trading Platform</p>
-          </div>
-          <div class="tech-stack">
-            <p>['python','timeseries','postgres','GoogleBigQuery', 'airflow']</p>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="project3.html" class="project" id="project3">
-      <img src="project3.gif" alt="Project 3">
-      <div class="overlay">
-        <div class="overlay-content">
-          <div class="centered-content">
-            <h2>project_03</h2>
-            <p>Time for Tea: Tracking Tea Production</p>
-          </div>
-          <div class="tech-stack">
-            <p>['javascript','html','css','d3.js']</p>
+      </a>
+      <a href="project2.html" class="project" id="project2">
+        <img src="project2.gif" alt="Project 2">
+        <div class="overlay">
+          <div class="overlay-content">
+            <div class="centered-content">
+              <h2>project_02</h2>
+              <p>MARKET: Social Social Trading Platform</p>
+            </div>
+            <div class="tech-stack">
+              <p>['python','timeseries','postgres','GoogleBigQuery', 'airflow']</p>
+            </div>
           </div>
         </div>
+      </a>
+      <a href="project3.html" class="project" id="project3">
+        <img src="project3.gif" alt="Project 3">
+        <div class="overlay">
+          <div class="overlay-content">
+            <div class="centered-content">
+              <h2>project_03</h2>
+              <p>Time for Tea: Tracking Tea Production</p>
+            </div>
+            <div class="tech-stack">
+              <p>['javascript','html','css','d3.js']</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+    
+    
+    <section id="contact">
+      <div class="contact-form">
+        <form action="/submit_message" method="POST">
+          <textarea id="message" name="message" rows="1" required></textarea><br>
+          <button type="submit">
+            <span class="bi bi-envelope-at-fill" aria-hidden="true"> send me a note</span>
+          </button>
+        </form>
       </div>
-    </a>
-  </section>
-
-  <section id="contact">
-    <div class="links">
-      <a href="https://github.com/hramzan01"><i class="bi bi-github icon"></i></a>
-      <a href="https://medium.com/@hramzan"><i class="bi bi-medium icon"></i></a>
-      <a href="https://www.linkedin.com/in/haaris-ramzan-cv/"><i class="bi bi-linkedin icon"></i></a>
+    </section>
+    
+    <div class='footer'>
+        <p>Haaris Ramzan: Data Engineer ©</p>
     </div>
-  </section>
 
-  <div class="scroll-indicator">
-    <a href="#projects">
-      <div class="arrow"></div>
-    </a>
-  </div>
-
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="scroll-indicator">
+      <a href="#projects">
+        <div class="arrow"></div>
+      </a>
+    </div>
+    
+    
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
