@@ -198,43 +198,6 @@ h1, h2, h3, h4, h5, p {
   color: #000;
 }
 
-#timeline {
-  margin-top: 50px; /* Adjust the margin as needed */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#timeline-svg {
-  width: 100%;
-  max-width: 1000px; /* Limit the maximum width of the SVG */
-}
-
-#timeline-svg line {
-  stroke-dasharray: 5; /* Add dashes to the line */
-}
-
-#timeline-svg circle {
-  transition: fill 0.3s; /* Add smooth transition effect to circle fill */
-}
-
-#timeline-svg text {
-  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
-  font-size: 14px; /* Adjust font size as needed */
-  text-anchor: middle; /* Center-align text horizontally */
-}
-
-#timeline-svg circle:hover {
-  fill: #00a91f; /* Change circle color on hover */
-}
-
-.publication-link {
-  color: steelblue; /* Color of the link */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Bold font */
-  transition: color 0.3s; /* Smooth color transition */
-}
-
 .publication-link:hover {
   color: navy; /* Change color on hover */
 }
@@ -254,19 +217,6 @@ h1, h2, h3, h4, h5, p {
   left: 0;
   width: 100%;
   text-align: center;
-}
-
-.profile-picture {
-  width: 150px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  overflow: hidden;
-  border-radius: 50%; /* Makes the image round */
-}
-
-.profile-picture img {
-  width: 100%; /* Ensure the image fills its container */
-  height: 100%; /* Ensure the image fills its container */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
 }
 
 .header {
@@ -341,4 +291,64 @@ h1, h2, h3, h4, h5, p {
   padding: 10px 20px;
   font-family: "M PLUS Code Latin", monospace;
   color:#666;
+}
+
+#timeline {
+  margin-top: 50px; /* Adjust the margin as needed */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#timeline-svg {
+  width: 100%;
+  max-width: 1000px; /* Limit the maximum width of the SVG */
+  margin-bottom: -50px;
+}
+
+#timeline-svg line {
+  stroke-dasharray: 5; /* Add dashes to the line */
+}
+
+#timeline-svg circle {
+  transition: fill 0.3s; /* Add smooth transition effect to circle fill */
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.role {
+  position: relative;
+  margin: 0px 80px;
+  cursor: pointer;
+  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
+  font-size: 14px; /* Adjust font size as needed */
+  text-anchor: middle; /* Center-align text horizontally */
+}
+
+.tooltip {
+  visibility: hidden;
+  color: #898989;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: -60px;
+  opacity: 0;
+  transition: opacity 0.8s, bottom 0.8s;
+  text-align: center;
+}
+
+.role:hover .tooltip {
+  visibility: visible;
+  width: max-content;
+  opacity: 1;
+  bottom: -70px;
+  max-width: 500px;
+  justify-content: center;
+  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
+  text-align: left;
 }
