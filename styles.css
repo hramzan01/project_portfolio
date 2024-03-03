@@ -2,7 +2,6 @@
 #home {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end; /* Align content to the bottom */
   align-items: center;
   color: white;
@@ -35,7 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh; /* Optionally, you can set the height to make it take up the full viewport height */
+  height: 40vh; /* Optionally, you can set the height to make it take up the full viewport height */
 }
 
 #about .content {
@@ -299,7 +298,7 @@ h4, h5 {
   background-color: #007bff;
 }
 
-
+/* SVG styling */
 #timeline {
   display: flex;
   justify-content: center; /* Center the SVG horizontally */
@@ -309,7 +308,7 @@ h4, h5 {
 #timeline-svg {
   width: 100%; /* Set the width to 100% */
   height: auto; /* Allow the height to adjust automatically */
-  max-width: 80%; /* Optionally, set a maximum width */
+  max-width: 95%; /* Optionally, set a maximum width */
 }
 
 #timeline-svg line {
@@ -320,56 +319,37 @@ h4, h5 {
   transition: fill 0.3s; /* Add smooth transition effect to circle fill */
 }
 
+/* Role styling */
 .timeline {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px 40px; /* Gap between items */
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  text-align: center;
 }
 
-/* Home section content */
 .role {
-  position: relative;
-  margin: 0px 80px;
-  cursor: pointer;
-  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
-  font-size: 14px; /* Adjust font size as needed */
-  text-anchor: middle; /* Center-align text horizontally */
-  transition: opacity 0.3s ease; /* Add transition for smooth fade effect */
-}
-
-.role:hover {
-  opacity: 1; /* Make the hovered role fully opaque */
-}
-
-.role:not(:hover) {
-  opacity: 0.5; /* Reduce opacity for roles that are not being hovered */
-}
-
-.tooltip {
-  visibility: hidden;
-  color: #898989;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-  bottom: -60px;
-  opacity: 0;
-  transition: opacity 0.8s, bottom 0.8s;
-  text-align: center;
-  display: flex;
+  text-align: center; /* Center content vertically */
   justify-content: center;
-  align-items: center;
+
 }
 
-.role:hover .tooltip {
-  visibility: visible;
-  width: max-content;
-  opacity: 1;
-  bottom: -80px;
-  max-width: 500px;
-  justify-content: center;
-  font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
-  text-align: left;
+.description {
+  display: grid; /* Initially hide the description */
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.8s ease; /* Add transition effect */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.role:hover .description {
+  display: grid; /* Show the description on hover */
+  opacity: 0.8; /* Fade in the description */
+}
+
+/* Make the description take up full width when hovered */
+.role:hover .description {
+  grid-column: 1 / span 3; /* Span across all three columns */
 }
 
 .footer {
