@@ -75,3 +75,9 @@ setTimeout(() => {
         });
     }, 6000); // Repeat slow movement every 5 seconds
 }, 1000); // Start slow movement after 2 seconds (after initial animation finishes)
+
+// Select a random index to make a circle red
+//const redCircleIndex = Math.floor(Math.random() * numCircles);
+
+// Change the fill color of the selected circle to red
+//circles[redCircleIndex].attr("fill", "red").attr("opacity", 0.7);

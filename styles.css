@@ -7,6 +7,9 @@
   align-items: center;
   color: white;
   padding-bottom: 100px; /* Add some padding to push content up */
+  position: relative;
+  text-align: center;
+
 }
 
 #home .content {
@@ -27,13 +30,19 @@
 }
 
 #about {
-  padding: 15% 0; /* Increase padding to increase height */
+  padding: 20% 0%; /* Increase padding to increase height */
   background-color: #f4f4f4; /* Background color for the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Optionally, you can set the height to make it take up the full viewport height */
 }
 
 #about .content {
   text-align: center;
   color: #333; /* Text color for the section */
+  max-width: 60%;
+  justify-content: center;
 }
 
 
@@ -118,8 +127,12 @@ body {
 }
 
 /* Additional styles for specific elements if needed */
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5 {
   font-family: "M PLUS Code Latin", monospace;
+}
+
+h4, h5 {
+  color: #ffffff;
 }
 
 .scroll-indicator {
@@ -288,16 +301,15 @@ h1, h2, h3, h4, h5, p {
 
 
 #timeline {
-  margin-top: 50px; /* Adjust the margin as needed */
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the SVG horizontally */
+  align-items: center; /* Center the SVG vertically */
 }
 
 #timeline-svg {
-  width: 100%;
-  max-width: 1000px; /* Limit the maximum width of the SVG */
-  margin-bottom: -50px;
+  width: 100%; /* Set the width to 100% */
+  height: auto; /* Allow the height to adjust automatically */
+  max-width: 80%; /* Optionally, set a maximum width */
 }
 
 #timeline-svg line {
@@ -344,6 +356,9 @@ h1, h2, h3, h4, h5, p {
   opacity: 0;
   transition: opacity 0.8s, bottom 0.8s;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .role:hover .tooltip {
