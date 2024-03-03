@@ -18,7 +18,7 @@ const circles = [];
 for (let i = 0; i < numCircles; i++) {
     const circle = svg.append("circle")
         .attr("r", Math.random() * 50) // Random radius
-        .attr("fill", "darkgray")
+        .attr("fill", 'grey')
         .attr("opacity", getRandomOpacity())
         .attr("cx", svgWidth / 2)
         .attr("cy", svgHeight / 2);
@@ -77,7 +77,7 @@ setTimeout(() => {
 }, 1000); // Start slow movement after 2 seconds (after initial animation finishes)
 
 // Select a random index to make a circle red
-//const redCircleIndex = Math.floor(Math.random() * numCircles);
+const redCircleIndex = Math.floor(Math.random() * numCircles);
 
 // Change the fill color of the selected circle to red
-//circles[redCircleIndex].attr("fill", "red").attr("opacity", 0.7);
+circles[redCircleIndex].attr("fill", "steelblue").attr("opacity", 0.7);

@@ -126,12 +126,13 @@ body {
 }
 
 /* Additional styles for specific elements if needed */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: "M PLUS Code Latin", monospace;
 }
 
-h4, h5 {
-  color: #ffffff;
+h5 {
+  font-size: 10px;
+  font-family: "M PLUS Code Latin", monospace;
 }
 
 .scroll-indicator {
@@ -229,6 +230,7 @@ h4, h5 {
   left: 0;
   width: 100%;
   text-align: center;
+  font-family: "M PLUS Code Latin", monospace;
 }
 
 .header {
@@ -250,7 +252,7 @@ h4, h5 {
 }
 
 .contact-form h2 {
-  color: #333;
+  color: #787878;
 }
 
 .contact-form form {
@@ -323,7 +325,6 @@ h4, h5 {
 .timeline {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 20px 40px; /* Gap between items */
   justify-content: center;
   text-align: center;
 }
@@ -331,7 +332,8 @@ h4, h5 {
 .role {
   text-align: center; /* Center content vertically */
   justify-content: center;
-
+  color: #a5a5a5; /* Dark grey text color */
+  font-family: "M PLUS Code Latin", monospace;
 }
 
 .description {
@@ -340,11 +342,17 @@ h4, h5 {
   transition: opacity 0.8s ease; /* Add transition effect */
   text-align: center;
   margin-top: 20px;
+  text-align: left;
+}
+
+.role:hover {
+  color: #545454;
 }
 
 .role:hover .description {
   display: grid; /* Show the description on hover */
-  opacity: 0.8; /* Fade in the description */
+  opacity: 0.4; /* Fade in the description */
+
 }
 
 /* Make the description take up full width when hovered */
@@ -352,9 +360,10 @@ h4, h5 {
   grid-column: 1 / span 3; /* Span across all three columns */
 }
 
+
 .footer {
   background-color:#f4f4f4;
-  padding: 5px 15px;
+  padding: 15px 15px;
   font-family: "M PLUS Code Latin", monospace;
   color:#666;
   font-size: small;
