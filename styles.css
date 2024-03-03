@@ -286,12 +286,6 @@ h1, h2, h3, h4, h5, p {
   background-color: #007bff;
 }
 
-.footer {
-  background-color:#f4f4f4;
-  padding: 10px 20px;
-  font-family: "M PLUS Code Latin", monospace;
-  color:#666;
-}
 
 #timeline {
   margin-top: 50px; /* Adjust the margin as needed */
@@ -361,4 +355,12 @@ h1, h2, h3, h4, h5, p {
   justify-content: center;
   font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
   text-align: left;
+}
+
+.footer {
+  background-color:#f4f4f4;
+  padding: 5px 15px;
+  font-family: "M PLUS Code Latin", monospace;
+  color:#666;
+  font-size: small;
 }
