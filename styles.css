@@ -321,6 +321,7 @@ h1, h2, h3, h4, h5, p {
   margin-top: 50px;
 }
 
+/* Home section content */
 .role {
   position: relative;
   margin: 0px 80px;
@@ -328,6 +329,15 @@ h1, h2, h3, h4, h5, p {
   font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
   font-size: 14px; /* Adjust font size as needed */
   text-anchor: middle; /* Center-align text horizontally */
+  transition: opacity 0.3s ease; /* Add transition for smooth fade effect */
+}
+
+.role:hover {
+  opacity: 1; /* Make the hovered role fully opaque */
+}
+
+.role:not(:hover) {
+  opacity: 0.5; /* Reduce opacity for roles that are not being hovered */
 }
 
 .tooltip {
@@ -346,7 +356,7 @@ h1, h2, h3, h4, h5, p {
   visibility: visible;
   width: max-content;
   opacity: 1;
-  bottom: -70px;
+  bottom: -80px;
   max-width: 500px;
   justify-content: center;
   font-family: "M PLUS Code Latin", monospace; /* Use the desired font */
