@@ -44,7 +44,7 @@ for (let i = 0; i < numCircles; i++) {
 function animateCircles() {
     circles.forEach((circle, index) => {
         circle.transition()
-            .duration(6000)
+            .duration(3000)
             .attr("cx", Math.random() * svgWidth)
             .attr("cy", Math.random() * svgHeight)
             .attr("opacity", getRandomOpacity())
@@ -69,15 +69,15 @@ setTimeout(() => {
     setInterval(() => {
         circles.forEach(circle => {
             circle.transition()
-                .duration(6000) // Slow movement duration
+                .duration(3000) // Slow movement duration
                 .attr("cx", Math.random() * svgWidth)
                 .attr("cy", Math.random() * svgHeight);
         });
-    }, 6000); // Repeat slow movement every 5 seconds
+    }, 3000); // Repeat slow movement every 5 seconds
 }, 1000); // Start slow movement after 2 seconds (after initial animation finishes)
 
 // Select a random index to make a circle red
 const redCircleIndex = Math.floor(Math.random() * numCircles);
 
 // Change the fill color of the selected circle to red
-circles[redCircleIndex].attr("fill", "steelblue").attr("opacity", 0.7);
+circles[redCircleIndex].attr("fill", "orange").attr("opacity", 1);
