@@ -26,23 +26,31 @@
   text-align: center;
   font-weight: bold;
   color: rgb(97, 97, 97);
+  display: flex;
+  padding: 0% 0%;
+  justify-content: center;
 }
 
 #about {
-  padding: 20% 0%; /* Increase padding to increase height */
-  background-color: #f4f4f4; /* Background color for the section */
+  padding: 20% 0%;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh; /* Optionally, you can set the height to make it take up the full viewport height */
+  height: 40vh;
 }
 
 #about .content {
   text-align: center;
-  color: #333; /* Text color for the section */
+  color: #333;
   max-width: 60%;
-  justify-content: center;
 }
+
+#about .content h2 {
+  color: rgb(50, 50, 50);
+  margin-bottom: 20px; /* Add some space between title and description */
+}
+
 
 
 /* Projects section */
@@ -228,79 +236,25 @@ h5 {
 }
 
 .tech-stack {
-  position: absolute;
-  bottom: 50px; /* Adjust as needed */
-  left: 0;
-  width: 100%;
-  text-align: center;
+  margin-top: 10px; /* Add some top margin for spacing */
   font-family: "M PLUS Code Latin", monospace;
+}
+
+.tech-stack p {
+  margin: 0; /* Remove default margin */
+}
+
+@media screen and (max-width: 768px) {
+  .tech-stack p {
+    white-space: normal; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if necessary */
+  }
 }
 
 .header {
   position: fixed;
   width: 100%;
   z-index: 10000; /* Ensure the content is above the SVG */
-}
-
-/* Contact section */
-#contact {
-  background-color: #f4f4f4;
-  padding: 0 10;
-  text-align: center;
-}
-
-.contact-form {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.contact-form h2 {
-  color: #787878;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-form label {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #666;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-}
-
-#message {
-  border: 1px solid #ffffff;
-}
-
-.contact-form textarea {
-  height: 70px;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: rgb(119, 119, 119);
-  color: rgb(231, 231, 231);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #007bff;
 }
 
 /* SVG styling */
