@@ -37,20 +37,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 90vh;
 }
 
 #about .content {
   text-align: center;
   color: #333;
-  max-width: 60%;
+  max-width: 320px;
 }
 
 #about .content h2 {
   color: rgb(50, 50, 50);
   margin-bottom: 20px; /* Add some space between title and description */
 }
-
 
 
 /* Projects section */
@@ -74,30 +73,6 @@
   width: 100%;
   height: 90%;
   object-fit: cover; /* Crop the image */
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 90%;
-  opacity: 0.2;
-  transition: opacity 1s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.project:hover .overlay {
-  opacity: 0.7;
-}
-
-.overlay h2,
-.overlay p {
-  color: white;
 }
 
 /* Contact section */
@@ -151,7 +126,6 @@ h5 {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .arrow {
@@ -259,26 +233,6 @@ h5 {
   z-index: 10000; /* Ensure the content is above the SVG */
 }
 
-/* SVG styling */
-#timeline {
-  display: flex;
-  justify-content: center; /* Center the SVG horizontally */
-  align-items: center; /* Center the SVG vertically */
-}
-
-#timeline-svg {
-  width: 100%; /* Set the width to 100% */
-  height: auto; /* Allow the height to adjust automatically */
-  max-width: 95%; /* Optionally, set a maximum width */
-}
-
-#timeline-svg line {
-  stroke-dasharray: 5; /* Add dashes to the line */
-}
-
-#timeline-svg circle {
-  transition: fill 0.3s; /* Add smooth transition effect to circle fill */
-}
 
 /* Role styling */
 .timeline {
@@ -305,6 +259,7 @@ h5 {
   text-align: left;
   padding: 10%;
   justify-content: center;
+  max-width: 320px;
 }
 
 .role:hover {
@@ -315,12 +270,6 @@ h5 {
   display: grid; /* Show the description on hover */
   opacity: 0.8; /* Fade in the description */
   transition: transform 0.3s ease;
-
-}
-
-/* Make the description take up full width when hovered */
-.role:hover .description {
-  grid-column: 1 / span 3; /* Span across all three columns */
 }
 
 
@@ -333,4 +282,27 @@ h5 {
   z-index: 1000;
   opacity: none;
   position: sticky;
+}
+
+.photo-container {
+  padding: 20px; /* Add padding around the circular image */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+}
+
+.photo {
+  width: 200px; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  border-radius: 50%; /* Make the border radius 50% to create a circle */
+  overflow: hidden; /* Hide any content that overflows the circular border */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.photo img {
+  width: 100%; /* Ensure the image fills the circular container */
+  height: auto; /* Allow the height to adjust automatically */
+  display: block; /* Remove any extra space around the image */
 }

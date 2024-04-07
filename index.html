@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
-
-
+    
   </head>
   <body>
-
+    
     <div class='header'>
       <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>  
         <a href="#projects">Projects</a>
-        <a href="https://eandt.theiet.org">Publications</a>
         <div class="icons">
           <a href="https://github.com/hramzan01"><i class="bi bi-github"></i></a>
           <a href="https://medium.com/@hramzan"><i class="bi bi-medium"></i></a>
@@ -37,71 +37,40 @@
       <svg id="animated-svg"></svg>
     </section>
     
+    
     <section id="about">
       <div class="background"></div>
       <div class="content">
         <h2>About Me</h2>
+        <div class="photo-container">
+          <div class="photo">
+            <img src="photo.jpeg" alt="profile_pic">
+          </div>
+        </div>
         <p>
-          Architect and data specialist leveraging project data to deliver high quality, cost effective and sustainable design.<br>
-          From the decarbonisation of modern housing to monitoring the big data requirements of future cities across the world and beyond.
+          Data specialist with a background in architecture and data analytics. I am responsible for the development of innovative data driven applications, providing key insights to both the design and client team.
         </p>
+        <div class="timeline">
+          <div class="role">
+            <p>2016 <i class="bi bi-building"></i></p>
+            <p>Architect</p>
+          </div>
+          <div class="role">
+            <p>2020 <i class="bi bi-laptop"></i></p>
+            <p>BIM Lead </p>
+          </div>
+          <div class="role">
+            <p>2022 <i class="bi bi-database"></i></p>
+            <p>Data Engineer</p>
+          </div>
+        </div>
       </div>
     </section>
     
-    <section id="timeline">
-      <svg id="timeline-svg">
-          <line x1="5%" y1="50%" x2="95%" y2="50%" stroke="#ccc" stroke-width="2" />
-  
-          <!-- Add unique IDs to circles -->
-          <circle cx="5%" cy="50%" r="0.7%" fill="#ccc"></circle>
-          <circle cx="95%" cy="50%" r="0.7%" fill="#ccc"></circle>
-          <circle  cx="15%" cy="50%" r="1.5%" fill="orange"></circle>
-          <circle cx="50%" cy="50%" r="1.5%" fill="orange"></circle>
-          <circle cx="85%" cy="50%" r="1.5%" fill="orange"></circle>
-      </svg>
-  </section>
-
-  <div class="timeline">  
-    <div class="role">
-      <p>2016 <i class="bi bi-building"></i></p>
-      <p>Architect</p>
-      <div class="description">
-        <ul>
-          <li>Designs system structures.</li>
-          <li>Meets functional requirements.</li>
-          <li>Collaborates with stakeholders.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="role">
-      <p>2020 <i class="bi bi-laptop"></i></p>
-      <p>BIM Lead </p>
-      <div class="description">
-        <ul>
-          <li>Uses computational techniques.</li>
-          <li>Optimizes design processes.</li>
-          <li>Creates digital models.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="role">
-      <p>2022 <i class="bi bi-database"></i></p>
-      <p>Data Engineer</p>
-      <div class="description">
-        <ul>
-          <li>Develops database architectures.</li>
-          <li>Tests large-scale systems.</li>
-          <li>Manages data pipelines.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
     
     <section id="projects">
+      
       <a href="https://medium.com/@hramzan/architectural-insights-navigating-the-data-science-landscape-fe7cae68ff5e" class="project" id="project1">
-        <img src="project1.mp4" alt="Project 1">
         <div class="overlay">
           <div class="overlay-content">
             <div class="centered-content">
@@ -113,9 +82,10 @@
             </div>
           </div>
         </div>
+        <!-- <img src="project1.mp4" alt="Project 1"> -->
       </a>
+      
       <a href="project2.html" class="project" id="project2">
-        <img src="project2.gif" alt="Project 2">
         <div class="overlay">
           <div class="overlay-content">
             <div class="centered-content">
@@ -127,6 +97,7 @@
             </div>
           </div>
         </div>
+        <!-- <img src="project2.gif" alt="Project 2"> -->
       </a>
     </section>
     
@@ -137,10 +108,10 @@
     </div>
     
     <div class='footer'>
-        <p>Haaris Ramzan | copyright 2024 ©</p>
+      <p>Haaris Ramzan | copyright 2024 ©</p>
     </div>
-
-    <script src="script.js"></script>
+    
+  <script src="script.js"></script>
   </body>
   </html>
   
