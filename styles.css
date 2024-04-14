@@ -1,3 +1,5 @@
+*
+
 /* Home section content */
 #home {
   height: 100vh;
@@ -43,7 +45,7 @@
 #about .content {
   text-align: center;
   color: #333;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 #about .content h2 {
@@ -211,15 +213,6 @@ h5 {
   height: 100%;
 }
 
-.tech-stack {
-  margin-top: 10px; /* Add some top margin for spacing */
-  font-family: "M PLUS Code Latin", monospace;
-}
-
-.tech-stack p {
-  margin: 0; /* Remove default margin */
-}
-
 @media screen and (max-width: 768px) {
   .tech-stack p {
     white-space: normal; /* Allow text to wrap */
@@ -305,4 +298,8 @@ h5 {
   width: 100%; /* Ensure the image fills the circular container */
   height: auto; /* Allow the height to adjust automatically */
   display: block; /* Remove any extra space around the image */
+}
+
+.embeddedAppMetaInfoBar_hostedName__-kdmi {
+  visibility: hidden;
 }
