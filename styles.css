@@ -303,3 +303,8 @@ h5 {
 .embeddedAppMetaInfoBar_hostedName__-kdmi {
   visibility: hidden;
 }
+
+.stack img {
+  padding: 3px; /* Adjust the value as needed */
+  padding-top: 10px;
+}
