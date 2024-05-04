@@ -35,7 +35,8 @@
 
 #about {
   padding: 20% 0%;
-  background-color: #f4f4f4;
+  background-color: #ffffff00;
+  background-image: linear-gradient(to bottom, #ffffff, #f4f4f4);
   display: flex;
   justify-content: center;
   align-items: center;
