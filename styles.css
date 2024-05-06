@@ -41,10 +41,11 @@
   justify-content: center;
   align-items: center;
   height: 80vh;
+  font-family: "M PLUS Code Latin", monospace;
 }
 
 #about .content {
-  text-align: center;
+  text-align: justify;
   color: #333;
   max-width: 400px;
 }
@@ -234,14 +235,17 @@ h5 {
   grid-template-columns: repeat(3, 1fr); /* Three columns */
   justify-content: center;
   text-align: center;
-  max-width: 100vw;
+  max-width: 400px;
+  padding: 0 00px;
 }
 
 .role {
   text-align: center; /* Center content vertically */
-  justify-content: center;
+  justify-content: justify;
   color: #a5a5a5; /* Dark grey text color */
   font-family: "M PLUS Code Latin", monospace;
+  padding: 20px;
+  max-width: 400px;
 }
 
 .description {
@@ -251,9 +255,9 @@ h5 {
   text-align: center;
   margin-top: 20px;
   text-align: left;
-  padding: 10%;
+  padding: 0%;
   justify-content: center;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 .role:hover {
@@ -306,6 +310,6 @@ h5 {
 }
 
 .stack img {
-  padding: 3px; /* Adjust the value as needed */
+  padding: 0px; /* Adjust the value as needed */
   padding-top: 10px;
 }
