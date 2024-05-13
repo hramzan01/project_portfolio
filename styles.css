@@ -215,10 +215,19 @@ h5 {
   height: 100%;
 }
 
+.tech-stack p {
+  white-space: normal; /* Allow text to wrap */
+  word-break: break-word; /* Break long words if necessary */
+  font-size: small; /* Adjust the font size as needed */
+  color: #a5a5a5;
+}
+
 @media screen and (max-width: 768px) {
   .tech-stack p {
     white-space: normal; /* Allow text to wrap */
     word-break: break-word; /* Break long words if necessary */
+    font-size: small; /* Adjust the font size as needed */
+    color: #a5a5a5;
   }
 }
 
@@ -312,4 +321,27 @@ h5 {
 .stack img {
   padding: 0px; /* Adjust the value as needed */
   padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Add your mobile-specific styles here */
+  #home {
+    justify-content: center; /* Center content vertically */
+    padding-bottom: 50px; /* Reduce padding */
+  }
+
+  /* Adjust other sections as needed */
+  #about {
+    padding: 20% 10%;
+    font-size: small;
+  }
+
+  #projects {
+    grid-template-columns: 1fr; /* Adjust column layout */
+  }
+
+  .stack img {
+    padding: 10px; /* Adjust the value as needed */
+    padding-top: 3px;
+  }
 }
