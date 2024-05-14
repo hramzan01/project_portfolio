@@ -7,7 +7,7 @@
   justify-content: flex-end; /* Align content to the bottom */
   align-items: center;
   color: white;
-  padding-bottom: 100px; /* Add some padding to push content up */
+  padding-bottom: 10px; /* Add some padding to push content up */
   position: relative;
   text-align: center;
 
@@ -34,7 +34,7 @@
 }
 
 #about {
-  padding: 20% 0%;
+  padding: 0% 0%;
   background-color: #ffffff00;
   background-image: linear-gradient(to bottom, #ffffff, #f4f4f4);
   display: flex;
@@ -47,19 +47,24 @@
 #about .content {
   text-align: justify;
   color: #333;
-  max-width: 400px;
+  max-width: 520px;
+  font-size: small;
 }
 
 #about .content h2 {
   color: rgb(50, 50, 50);
   margin-bottom: 20px; /* Add some space between title and description */
-}
 
+}
+.sig {
+  max-width: 130px;
+  float:inline-end
+}
 
 /* Projects section */
 #projects {
   display: grid;
-  grid-template-columns: 1fr; /* Single column */
+  grid-template-columns: 1fr;
   grid-gap: 50px;
   padding: 100px 0;
   text-align: center;
@@ -258,15 +263,13 @@ h5 {
 }
 
 .description {
-  display: grid; /* Initially hide the description */
   opacity: 0.3; /* Set initial opacity to 0 */
   transition: opacity 0.8s ease; /* Add transition effect */
   text-align: center;
   margin-top: 20px;
-  text-align: left;
   padding: 0%;
   justify-content: center;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .role:hover {
@@ -319,8 +322,8 @@ h5 {
 }
 
 .stack img {
-  padding: 0px; /* Adjust the value as needed */
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
